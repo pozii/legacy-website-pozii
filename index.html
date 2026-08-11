@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pozii</title>
+  <meta name="description" content="Software engineer · open-source builder · backend systems nerd">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <main class="content">
+
+    <div class="top-bar">
+      <nav class="top-links">
+        <a href="mailto:hello@pozii.dev">email</a> / <a href="https://github.com/pozii" target="_blank" rel="noopener">github</a>
+      </nav>
+
+      <div class="top-actions">
+        <a class="btn view-real-site" href="https://pozii.dev">View real site</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+          <i class="ph ph-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <section id="about" class="intro">
+      <p><span class="eyebrow">hey, I'm</span> <span class="name-font">pozii</span><span class="dot">.</span></p>
+      <p>I'm a software engineer · open-source builder · backend systems nerd — somewhere on the internet fueled by caffeine.</p>
+      <p>I'm a software engineer specializing in high-performance backends, scalable architecture, and distributed systems. I've been writing code for years and enjoy working close to the metal — from JVM internals and networking protocols to low-level systems programming.</p>
+      <p>I'm fluent in seven languages professionally — Java, Python, Go, C, C++, C#, and Rust. Whether it's optimizing concurrent applications or developing robust microservices, I love solving complex technical challenges.</p>
+    </section>
+
+    <section id="currently" class="box">
+      <h2 class="box-title">Currently</h2>
+      <ul class="tick-list">
+        <li><i class="ph ph-arrow-right"></i> Architecting scalable backend infrastructure</li>
+        <li><i class="ph ph-arrow-right"></i> Exploring low-level systems and network optimization</li>
+        <li><i class="ph ph-arrow-right"></i> Contributing to open-source projects</li>
+      </ul>
+    </section>
+
+    <article class="box" id="mccons">
+      <div class="card-head">
+        <h2 class="box-title">mccons</h2>
+        <span class="badge">closed beta</span>
+      </div>
+      <p>The global tunneling and edge-caching network powering multiplayer game servers worldwide — fast, secure, and built from scratch.</p>
+      <ul class="feature-list">
+        <li>Ultra-low latency (&lt;12ms)</li>
+        <li>Advanced DDoS mitigation</li>
+        <li>Smart caching layer across 12+ edge regions</li>
+        <li>Native Java &amp; Bedrock support</li>
+        <li>Custom subdomains, resource pack hosting &amp; full REST API</li>
+        <li>Origin IP hidden · 99.9% uptime SLA</li>
+      </ul>
+      <div class="card-actions">
+        <a class="btn" href="https://logicbyte.org/p/mccons" target="_blank" rel="noopener">View <i class="ph ph-arrow-up-right"></i></a>
+        <a class="btn" href="mailto:contact@mccons.app">Get in touch</a>
+      </div>
+    </article>
+
+    <article class="box" id="primetiers">
+      <div class="card-head">
+        <h2 class="box-title">PrimeTiers</h2>
+        <span class="badge">in development</span>
+      </div>
+      <p>Bringing e-sports to Minecraft — a competitive ranking system where players climb tiers and qualify for tournaments, turning blocky battles into serious competition.</p>
+      <div class="card-actions">
+        <a class="btn" href="mailto:contact@primetiers.net">Get in touch</a>
+      </div>
+    </article>
+
+    <section id="languages" class="box">
+      <h2 class="box-title">Languages &amp; Tools</h2>
+      <div class="chips">
+        <span class="chip">Java</span>
+        <span class="chip">Python</span>
+        <span class="chip">Go</span>
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">C#</span>
+        <span class="chip">Rust</span>
+        <span class="chip">Git</span>
+        <span class="chip">Gradle</span>
+      </div>
+    </section>
+
+    <section id="companies" class="box">
+      <h2 class="box-title">Companies</h2>
+      <ul class="company-list">
+        <li>
+          <a href="https://logicbyte.org" target="_blank" rel="noopener">
+            <span class="company-name">LogicByte Studios <i class="ph ph-arrow-up-right"></i></span>
+            <span class="company-desc">Developer tools &amp; Minecraft utilities</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="box">
+      <h2 class="box-title">Contact</h2>
+      <p class="section-lead">Want to reach out? Here's where you can find me.</p>
+      <ul class="contact-list">
+        <!-- Gercek e-posta adresini buraya yaz -->
+        <li><a href="mailto:hello@pozii.dev"><i class="ph ph-envelope-simple"></i> Email</a></li>
+        <li><a href="https://github.com/pozii" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub — github.com/pozii</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.theme-toggle');
+      var icon = btn.querySelector('i');
+
+      function render(theme) {
+        icon.className = theme === 'dark' ? 'ph ph-sun' : 'ph ph-moon';
+      }
+
+      render(document.documentElement.getAttribute('data-theme'));
+
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        render(next);
+      });
+    })();
+  </script>
+
+</body>
+</html>

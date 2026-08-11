@@ -1,0 +1,469 @@
+/* ============================================================
+   pozii.dev — shadcn.com-style boxed layout
+   White background · narrow single column · boxed sections
+   ============================================================ */
+
+:root {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --muted: #52525b;
+  --muted-foreground: #71717a;
+  --border: #e4e4e7;
+  --box-bg: #f4f4f5;
+  --hover: #e4e4e7;
+  --radius: 6px;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --muted: #a1a1aa;
+  --muted-foreground: #a1a1aa;
+  --border: #27272a;
+  --box-bg: #18181b;
+  --hover: #27272a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 14px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ------------------------------------------------------------
+   Content — single narrow column, flush left
+   ------------------------------------------------------------ */
+
+.content {
+  max-width: 448px;
+  margin: 0;
+  padding: 48px 24px 24px;
+}
+
+section, article {
+  scroll-margin-top: 24px;
+}
+
+/* ------------------------------------------------------------
+   Top links
+   ------------------------------------------------------------ */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.top-links {
+  font-size: 14px;
+}
+
+.top-links a {
+  color: var(--foreground);
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.view-real-site {
+  display: inline-flex;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--hover);
+}
+
+.theme-toggle .ph {
+  font-size: 15px;
+}
+
+/* ------------------------------------------------------------
+   Intro — plain, unboxed text
+   ------------------------------------------------------------ */
+
+.intro p {
+  margin-bottom: 12px;
+  color: var(--foreground);
+}
+
+.intro .eyebrow {
+  color: var(--muted-foreground);
+}
+
+.name-font {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.dot {
+  color: var(--foreground);
+}
+
+.section-lead {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+/* ------------------------------------------------------------
+   Icons
+   ------------------------------------------------------------ */
+
+.ph {
+  font-size: 1.1em;
+  vertical-align: -0.1em;
+}
+
+/* ------------------------------------------------------------
+   Boxed sections
+   ------------------------------------------------------------ */
+
+.box {
+  background: var(--box-bg);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.box-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.box p {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-head .box-title {
+  margin-bottom: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--background);
+}
+
+/* ------------------------------------------------------------
+   Currently
+   ------------------------------------------------------------ */
+
+.tick-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tick-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.tick-list .ph {
+  color: var(--muted-foreground);
+}
+
+/* ------------------------------------------------------------
+   Feature list
+   ------------------------------------------------------------ */
+
+.feature-list {
+  list-style: none;
+  margin: 8px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feature-list li {
+  padding-left: 16px;
+  position: relative;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: var(--muted-foreground);
+}
+
+/* ------------------------------------------------------------
+   Buttons — shadcn.com style, flat gray
+   ------------------------------------------------------------ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+  color: var(--foreground);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.btn .ph {
+  font-size: 1em;
+}
+
+.btn:hover {
+  background: var(--hover);
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------
+   Chips — languages & tools
+   ------------------------------------------------------------ */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 13px;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* ------------------------------------------------------------
+   Companies
+   ------------------------------------------------------------ */
+
+.company-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-list a {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.company-list a:hover {
+  border-color: var(--muted-foreground);
+}
+
+.company-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.company-name .ph {
+  font-size: 0.85em;
+  color: var(--muted-foreground);
+}
+
+.company-desc {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+/* ------------------------------------------------------------
+   Contact
+   ------------------------------------------------------------ */
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.contact-list li {
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 2px;
+  font-size: 13px;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.contact-list .ph {
+  color: var(--muted-foreground);
+  font-size: 1.1em;
+}
+
+.contact-list a:hover {
+  color: var(--muted);
+}
+
+.subscribe label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.subscribe-row {
+  display: flex;
+  gap: 6px;
+}
+
+.subscribe input {
+  flex: 1;
+  min-width: 0;
+  font-family: inherit;
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+  color: var(--foreground);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.subscribe input:focus {
+  border-color: var(--muted-foreground);
+}
+
+/* ------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------ */
+
+.site-footer {
+  margin-top: 32px;
+  padding: 20px 0 32px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.site-footer a:hover {
+  color: var(--muted);
+}
+
+/* ------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------ */
+
+@media (max-width: 560px) {
+  .content {
+    padding: 32px 16px 16px;
+  }
+
+  .subscribe-row {
+    flex-direction: column;
+  }
+}

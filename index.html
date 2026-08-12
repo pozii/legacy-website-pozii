@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pozii</title>
   <meta name="description" content="Software engineer · open-source builder · backend systems nerd">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
   <script>
     (function () {
       var saved = localStorage.getItem('theme');
-      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var theme = saved || 'light';
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -41,9 +41,9 @@
 
     <section id="about" class="intro">
       <p><span class="eyebrow">hey, I'm</span> <span class="name-font">pozii</span><span class="dot">.</span></p>
-      <p>I'm a software engineer · open-source builder · backend systems nerd — somewhere on the internet fueled by caffeine.</p>
-      <p>I'm a software engineer specializing in high-performance backends, scalable architecture, and distributed systems. I've been writing code for years and enjoy working close to the metal — from JVM internals and networking protocols to low-level systems programming.</p>
-      <p>I'm fluent in seven languages professionally — Java, Python, Go, C, C++, C#, and Rust. Whether it's optimizing concurrent applications or developing robust microservices, I love solving complex technical challenges.</p>
+      <p>I'm a software engineer · open-source builder · backend systems nerd, somewhere on the internet fueled by caffeine.</p>
+      <p>I'm a software engineer specializing in high-performance backends, scalable architecture, and distributed systems. I've been writing code for years and enjoy working close to the metal, from JVM internals and networking protocols to low-level systems programming.</p>
+      <p>I'm fluent in seven languages professionally, Java, Python, Go, C, C++, C#, and Rust. Whether it's optimizing concurrent applications or developing robust microservices, I love solving complex technical challenges.</p>
     </section>
 
     <section id="currently" class="box">
@@ -60,7 +60,7 @@
         <h2 class="box-title">mccons</h2>
         <span class="badge">closed beta</span>
       </div>
-      <p>The global tunneling and edge-caching network powering multiplayer game servers worldwide — fast, secure, and built from scratch.</p>
+      <p>The global tunneling and edge-caching network powering multiplayer game servers worldwide, fast, secure, and built from scratch.</p>
       <ul class="feature-list">
         <li>Ultra-low latency (&lt;12ms)</li>
         <li>Advanced DDoS mitigation</li>
@@ -80,24 +80,43 @@
         <h2 class="box-title">PrimeTiers</h2>
         <span class="badge">in development</span>
       </div>
-      <p>Bringing e-sports to Minecraft — a competitive ranking system where players climb tiers and qualify for tournaments, turning blocky battles into serious competition.</p>
+      <p>Bringing e-sports to Minecraft, a competitive ranking system where players climb tiers and qualify for tournaments, turning blocky battles into serious competition.</p>
       <div class="card-actions">
         <a class="btn" href="mailto:contact@primetiers.net">Get in touch</a>
+      </div>
+    </article>
+
+    <article class="box" id="fliver">
+      <div class="card-head">
+        <h2 class="box-title">Fliver</h2>
+        <span class="badge">in development</span>
+      </div>
+      <p>Your Minecraft server, as an API. Expose any server value through a personal subdomain, pair with one command, and write endpoints in Skript, no port forwarding, no infrastructure to manage.</p>
+      <ul class="feature-list">
+        <li>Turn any server value into a live API endpoint</li>
+        <li>Skript-native bridge, no Java, no compilation</li>
+        <li>Event webhooks for joins, deaths, chat &amp; more</li>
+        <li>Personal account subdomains with clean, docs-ready URLs</li>
+        <li>Scoped API keys with per-key rate limits &amp; analytics</li>
+        <li>Autonomous endpoint verification, no human review</li>
+      </ul>
+      <div class="card-actions">
+        <a class="btn" href="mailto:hi@logicbyte.org?subject=Fliver%20inquiry&amp;body=Hi%2C%0A%0AI'm%20reaching%20out%20about%20Fliver.%0A%0A">Get in touch</a>
       </div>
     </article>
 
     <section id="languages" class="box">
       <h2 class="box-title">Languages &amp; Tools</h2>
       <div class="chips">
-        <span class="chip">Java</span>
-        <span class="chip">Python</span>
-        <span class="chip">Go</span>
-        <span class="chip">C</span>
-        <span class="chip">C++</span>
-        <span class="chip">C#</span>
-        <span class="chip">Rust</span>
-        <span class="chip">Git</span>
-        <span class="chip">Gradle</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=java" alt="" draggable="false">Java</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=py" alt="" draggable="false">Python</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=go" alt="" draggable="false">Go</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=c" alt="" draggable="false">C</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=cpp" alt="" draggable="false">C++</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=cs" alt="" draggable="false">C#</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=rust" alt="" draggable="false">Rust</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=git" alt="" draggable="false">Git</span>
+        <span class="chip"><img class="chip-icon" src="https://skillicons.dev/icons?i=gradle" alt="" draggable="false">Gradle</span>
       </div>
     </section>
 
@@ -106,8 +125,11 @@
       <ul class="company-list">
         <li>
           <a href="https://logicbyte.org" target="_blank" rel="noopener">
-            <span class="company-name">LogicByte Studios <i class="ph ph-arrow-up-right"></i></span>
-            <span class="company-desc">Developer tools &amp; Minecraft utilities</span>
+            <img class="company-logo" src="public/logicbyte-logo.svg" alt="" draggable="false">
+            <span class="company-text">
+              <span class="company-name">LogicByte Studios <i class="ph ph-arrow-up-right"></i></span>
+              <span class="company-desc">Developer tools &amp; Minecraft utilities</span>
+            </span>
           </a>
         </li>
       </ul>
@@ -118,7 +140,7 @@
       <p class="section-lead">Want to reach out? Here's where you can find me.</p>
       <ul class="contact-list">
         <li><a href="mailto:hello@pozii.dev"><i class="ph ph-envelope-simple"></i> Email</a></li>
-        <li><a href="https://github.com/pozii" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a></li>
+        <li><a href="https://github.com/pozii" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> Github</a></li>
       </ul>
     </section>
 

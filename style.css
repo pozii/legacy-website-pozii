@@ -169,6 +169,10 @@ section, article {
 
 .card-head .box-title {
   margin-bottom: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .badge {
@@ -176,6 +180,10 @@ section, article {
   align-items: center;
   font-size: 0.75rem;
   font-weight: 500;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   padding: 1px 8px;
   border-radius: 999px;
   border: 1px solid var(--border);
@@ -262,12 +270,27 @@ section, article {
 }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 3px 12px;
   font-size: 13px;
   color: var(--foreground);
   background: var(--background);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.chip-icon {
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .company-list {
@@ -279,17 +302,40 @@ section, article {
 
 .company-list a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   padding: 10px 12px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--background);
   text-decoration: none;
   transition: border-color 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .company-list a:hover {
   border-color: var(--muted-foreground);
+}
+
+.company-logo {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.company-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .company-name {

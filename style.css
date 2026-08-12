@@ -322,25 +322,27 @@ section, article {
 }
 
 .company-logo {
-  display: inline-block;
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  background-color: var(--foreground);
-  -webkit-mask-image: url('public/logicbyte-logo.svg');
-  mask-image: url('public/logicbyte-logo.svg');
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: contain;
-  mask-size: contain;
   pointer-events: none;
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+.company-logo-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .company-logo-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .company-logo-dark {
+  display: inline-block;
 }
 
 .company-text {

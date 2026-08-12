@@ -1,8 +1,3 @@
-/* ============================================================
-   pozii.dev — shadcn.com-style boxed layout
-   White background · narrow single column · boxed sections
-   ============================================================ */
-
 :root {
   --background: #ffffff;
   --foreground: #09090b;
@@ -51,10 +46,6 @@ a {
   text-underline-offset: 2px;
 }
 
-/* ------------------------------------------------------------
-   Content — single narrow column, flush left
-   ------------------------------------------------------------ */
-
 .content {
   max-width: 448px;
   margin: 0;
@@ -64,10 +55,6 @@ a {
 section, article {
   scroll-margin-top: 24px;
 }
-
-/* ------------------------------------------------------------
-   Top links
-   ------------------------------------------------------------ */
 
 .top-bar {
   display: flex;
@@ -119,10 +106,6 @@ section, article {
   font-size: 15px;
 }
 
-/* ------------------------------------------------------------
-   Intro — plain, unboxed text
-   ------------------------------------------------------------ */
-
 .intro p {
   margin-bottom: 12px;
   color: var(--foreground);
@@ -146,18 +129,10 @@ section, article {
   margin-bottom: 12px;
 }
 
-/* ------------------------------------------------------------
-   Icons
-   ------------------------------------------------------------ */
-
 .ph {
   font-size: 1.1em;
   vertical-align: -0.1em;
 }
-
-/* ------------------------------------------------------------
-   Boxed sections
-   ------------------------------------------------------------ */
 
 .box {
   background: var(--box-bg);
@@ -208,10 +183,6 @@ section, article {
   background: var(--background);
 }
 
-/* ------------------------------------------------------------
-   Currently
-   ------------------------------------------------------------ */
-
 .tick-list {
   list-style: none;
   display: flex;
@@ -230,10 +201,6 @@ section, article {
 .tick-list .ph {
   color: var(--muted-foreground);
 }
-
-/* ------------------------------------------------------------
-   Feature list
-   ------------------------------------------------------------ */
 
 .feature-list {
   list-style: none;
@@ -256,10 +223,6 @@ section, article {
   left: 4px;
   color: var(--muted-foreground);
 }
-
-/* ------------------------------------------------------------
-   Buttons — shadcn.com style, flat gray
-   ------------------------------------------------------------ */
 
 .btn {
   display: inline-flex;
@@ -292,10 +255,6 @@ section, article {
   flex-wrap: wrap;
 }
 
-/* ------------------------------------------------------------
-   Chips — languages & tools
-   ------------------------------------------------------------ */
-
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -310,10 +269,6 @@ section, article {
   color: var(--foreground);
   background: var(--background);
 }
-
-/* ------------------------------------------------------------
-   Companies
-   ------------------------------------------------------------ */
 
 .company-list {
   list-style: none;
@@ -351,10 +306,6 @@ section, article {
   font-size: 12px;
   color: var(--muted-foreground);
 }
-
-/* ------------------------------------------------------------
-   Contact
-   ------------------------------------------------------------ */
 
 .contact-list {
   list-style: none;
@@ -420,10 +371,6 @@ section, article {
   border-color: var(--muted-foreground);
 }
 
-/* ------------------------------------------------------------
-   Footer
-   ------------------------------------------------------------ */
-
 .site-footer {
   margin-top: 32px;
   padding: 20px 0 32px;
@@ -453,10 +400,6 @@ section, article {
 .site-footer a:hover {
   color: var(--muted);
 }
-
-/* ------------------------------------------------------------
-   Responsive
-   ------------------------------------------------------------ */
 
 @media (max-width: 560px) {
   .content {
